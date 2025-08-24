@@ -1,0 +1,375 @@
+{
+  "info": {
+    "name": "Elasticsearch E-commerce API",
+    "description": "Complete API collection for testing the Elasticsearch e-commerce backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "productId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Checks",
+      "item": [
+        {
+          "name": "Server Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            }
+          }
+        },
+        {
+          "name": "Products API Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Management",
+      "item": [
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"iPhone 15 Pro\",\n  \"description\": \"Latest iPhone with advanced camera system, A17 Pro chip, and titanium design. Features 48MP main camera, 5x optical zoom, and USB-C connectivity.\",\n  \"category\": \"Electronics\",\n  \"brand\": \"Apple\",\n  \"price\": 999.99,\n  \"stock\": 50,\n  \"rating\": 4.8,\n  \"tags\": [\"smartphone\", \"camera\", \"5G\", \"titanium\", \"USB-C\"],\n  \"images\": [\"iphone15pro1.jpg\", \"iphone15pro2.jpg\", \"iphone15pro3.jpg\"]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/products",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products"]
+            }
+          }
+        },
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products?page=1&size=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Product by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/{{productId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "{{productId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 949.99,\n  \"stock\": 45,\n  \"rating\": 4.9\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/products/{{productId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "{{productId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/{{productId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "{{productId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search & Discovery",
+      "item": [
+        {
+          "name": "Search Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/search?q=iphone&category=Electronics&minPrice=500&maxPrice=1000&page=1&size=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "iphone"
+                },
+                {
+                  "key": "category",
+                  "value": "Electronics"
+                },
+                {
+                  "key": "minPrice",
+                  "value": "500"
+                },
+                {
+                  "key": "maxPrice",
+                  "value": "1000"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search by Brand",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/search?brand=Apple&page=1&size=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "search"],
+              "query": [
+                {
+                  "key": "brand",
+                  "value": "Apple"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search by Price Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/search?minPrice=100&maxPrice=500&page=1&size=15",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "search"],
+              "query": [
+                {
+                  "key": "minPrice",
+                  "value": "100"
+                },
+                {
+                  "key": "maxPrice",
+                  "value": "500"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "15"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search by Rating",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/search?minRating=4.5&page=1&size=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "search"],
+              "query": [
+                {
+                  "key": "minRating",
+                  "value": "4.5"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search In Stock Only",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/search?inStock=true&page=1&size=25",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "search"],
+              "query": [
+                {
+                  "key": "inStock",
+                  "value": "true"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "25"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Index Management",
+      "item": [
+        {
+          "name": "Get Index Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/stats",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "stats"]
+            }
+          }
+        },
+        {
+          "name": "Delete Index",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/products/index",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "index"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bulk Operations",
+      "item": [
+        {
+          "name": "Bulk Index Products",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"name\": \"MacBook Pro 16-inch\",\n      \"description\": \"Professional laptop with M3 Pro chip, 16-inch Liquid Retina XDR display, and up to 22 hours of battery life. Perfect for developers and creative professionals.\",\n      \"category\": \"Electronics\",\n      \"brand\": \"Apple\",\n      \"price\": 2499.99,\n      \"stock\": 25,\n      \"rating\": 4.9,\n      \"tags\": [\"laptop\", \"development\", \"professional\", \"M3\", \"XDR\"],\n      \"images\": [\"macbookpro1.jpg\", \"macbookpro2.jpg\"]\n    },\n    {\n      \"name\": \"Samsung Galaxy S24 Ultra\",\n      \"description\": \"Android flagship with S Pen, 200MP camera, and AI-powered features. Includes 5G connectivity, wireless charging, and IP68 water resistance.\",\n      \"category\": \"Electronics\",\n      \"brand\": \"Samsung\",\n      \"price\": 1199.99,\n      \"stock\": 35,\n      \"rating\": 4.7,\n      \"tags\": [\"smartphone\", \"android\", \"S Pen\", \"200MP\", \"5G\"],\n      \"images\": [\"galaxys24ultra1.jpg\", \"galaxys24ultra2.jpg\"]\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/products/bulk",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "bulk"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sample Data",
+      "item": [
+        {
+          "name": "Load Sample Data",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"name\": \"Nike Air Max 270\",\n      \"description\": \"Comfortable running shoes with Air Max unit for maximum cushioning. Breathable mesh upper and rubber outsole for durability.\",\n      \"category\": \"Footwear\",\n      \"brand\": \"Nike\",\n      \"price\": 150.00,\n      \"stock\": 100,\n      \"rating\": 4.6,\n      \"tags\": [\"running\", \"comfortable\", \"cushioning\", \"breathable\"],\n      \"images\": [\"nikeairmax2701.jpg\", \"nikeairmax2702.jpg\"]\n    },\n    {\n      \"name\": \"Adidas Ultraboost 22\",\n      \"description\": \"Premium running shoes with Boost midsole technology and Primeknit upper. Responsive cushioning and energy return for optimal performance.\",\n      \"category\": \"Footwear\",\n      \"brand\": \"Adidas\",\n      \"price\": 180.00,\n      \"stock\": 75,\n      \"rating\": 4.8,\n      \"tags\": [\"running\", \"boost\", \"primeknit\", \"responsive\"],\n      \"images\": [\"ultraboost221.jpg\", \"ultraboost222.jpg\"]\n    },\n    {\n      \"name\": \"Levi's 501 Original Jeans\",\n      \"description\": \"Classic straight-leg jeans with button fly and 5-pocket styling. Made from 100% cotton denim for comfort and durability.\",\n      \"category\": \"Clothing\",\n      \"brand\": \"Levi's\",\n      \"price\": 89.50,\n      \"stock\": 200,\n      \"rating\": 4.5,\n      \"tags\": [\"jeans\", \"classic\", \"cotton\", \"straight-leg\"],\n      \"images\": [\"levis5011.jpg\", \"levis5012.jpg\"]\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/products/bulk",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "products", "bulk"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

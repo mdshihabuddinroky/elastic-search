@@ -1,0 +1,279 @@
+{
+  "products": [
+    {
+      "name": "iPhone 15 Pro",
+      "description": "Latest iPhone with advanced camera system, A17 Pro chip, and titanium design. Features 48MP main camera, 5x optical zoom, and USB-C connectivity.",
+      "category": "Electronics",
+      "brand": "Apple",
+      "price": 999.99,
+      "stock": 50,
+      "rating": 4.8,
+      "tags": ["smartphone", "camera", "5G", "titanium", "USB-C"],
+      "images": ["iphone15pro1.jpg", "iphone15pro2.jpg", "iphone15pro3.jpg"]
+    },
+    {
+      "name": "MacBook Pro 16-inch",
+      "description": "Professional laptop with M3 Pro chip, 16-inch Liquid Retina XDR display, and up to 22 hours of battery life. Perfect for developers and creative professionals.",
+      "category": "Electronics",
+      "brand": "Apple",
+      "price": 2499.99,
+      "stock": 25,
+      "rating": 4.9,
+      "tags": ["laptop", "development", "professional", "M3", "XDR"],
+      "images": ["macbookpro1.jpg", "macbookpro2.jpg"]
+    },
+    {
+      "name": "Samsung Galaxy S24 Ultra",
+      "description": "Android flagship with S Pen, 200MP camera, and AI-powered features. Includes 5G connectivity, wireless charging, and IP68 water resistance.",
+      "category": "Electronics",
+      "brand": "Samsung",
+      "price": 1199.99,
+      "stock": 35,
+      "rating": 4.7,
+      "tags": ["smartphone", "android", "S Pen", "200MP", "5G"],
+      "images": ["galaxys24ultra1.jpg", "galaxys24ultra2.jpg"]
+    },
+    {
+      "name": "Nike Air Max 270",
+      "description": "Comfortable running shoes with Air Max unit for maximum cushioning. Breathable mesh upper and rubber outsole for durability.",
+      "category": "Footwear",
+      "brand": "Nike",
+      "price": 150.00,
+      "stock": 100,
+      "rating": 4.6,
+      "tags": ["running", "comfortable", "cushioning", "breathable"],
+      "images": ["nikeairmax2701.jpg", "nikeairmax2702.jpg"]
+    },
+    {
+      "name": "Adidas Ultraboost 22",
+      "description": "Premium running shoes with Boost midsole technology and Primeknit upper. Responsive cushioning and energy return for optimal performance.",
+      "category": "Footwear",
+      "brand": "Adidas",
+      "price": 180.00,
+      "stock": 75,
+      "rating": 4.8,
+      "tags": ["running", "boost", "primeknit", "responsive"],
+      "images": ["ultraboost221.jpg", "ultraboost222.jpg"]
+    },
+    {
+      "name": "Levi's 501 Original Jeans",
+      "description": "Classic straight-leg jeans with button fly and 5-pocket styling. Made from 100% cotton denim for comfort and durability.",
+      "category": "Clothing",
+      "brand": "Levi's",
+      "price": 89.50,
+      "stock": 200,
+      "rating": 4.5,
+      "tags": ["jeans", "classic", "cotton", "straight-leg"],
+      "images": ["levis5011.jpg", "levis5012.jpg"]
+    },
+    {
+      "name": "Uniqlo Ultra Light Down Jacket",
+      "description": "Lightweight down jacket with water-repellent finish. Packable design and warm insulation for cold weather protection.",
+      "category": "Clothing",
+      "brand": "Uniqlo",
+      "price": 69.90,
+      "stock": 150,
+      "rating": 4.4,
+      "tags": ["jacket", "down", "lightweight", "packable", "warm"],
+      "images": ["uniqlodown1.jpg", "uniqlodown2.jpg"]
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "description": "Premium noise-canceling headphones with 30-hour battery life. Industry-leading noise cancellation and exceptional sound quality.",
+      "category": "Electronics",
+      "brand": "Sony",
+      "price": 399.99,
+      "stock": 40,
+      "rating": 4.9,
+      "tags": ["headphones", "noise-canceling", "wireless", "premium"],
+      "images": ["sonywh1000xm51.jpg", "sonywh1000xm52.jpg"]
+    },
+    {
+      "name": "Canon EOS R6 Mark II",
+      "description": "Full-frame mirrorless camera with 24.2MP sensor and 4K video recording. Advanced autofocus and image stabilization.",
+      "category": "Electronics",
+      "brand": "Canon",
+      "price": 2499.00,
+      "stock": 15,
+      "rating": 4.8,
+      "tags": ["camera", "mirrorless", "full-frame", "4K", "autofocus"],
+      "images": ["canoneosr6markii1.jpg", "canoneosr6markii2.jpg"]
+    },
+    {
+      "name": "Dell XPS 13",
+      "description": "Ultrabook with 13.4-inch InfinityEdge display and Intel Core i7 processor. Premium build quality and long battery life.",
+      "category": "Electronics",
+      "brand": "Dell",
+      "price": 1299.99,
+      "stock": 30,
+      "rating": 4.6,
+      "tags": ["laptop", "ultrabook", "infinityedge", "intel", "premium"],
+      "images": ["dellxps131.jpg", "dellxps132.jpg"]
+    },
+    {
+      "name": "iPad Air 5th Generation",
+      "description": "10.9-inch tablet with M1 chip, Liquid Retina display, and Apple Pencil support. Perfect for creativity and productivity.",
+      "category": "Electronics",
+      "brand": "Apple",
+      "price": 599.99,
+      "stock": 45,
+      "rating": 4.7,
+      "tags": ["tablet", "iPad", "M1", "Apple Pencil", "creative"],
+      "images": ["ipadair1.jpg", "ipadair2.jpg"]
+    },
+    {
+      "name": "Bose QuietComfort 45",
+      "description": "Premium wireless headphones with world-class noise cancellation and 24-hour battery life. Comfortable for extended listening.",
+      "category": "Electronics",
+      "brand": "Bose",
+      "price": 329.00,
+      "stock": 60,
+      "rating": 4.8,
+      "tags": ["headphones", "noise-canceling", "wireless", "comfortable"],
+      "images": ["boseqc451.jpg", "boseqc452.jpg"]
+    },
+    {
+      "name": "Nike ZoomX Vaporfly NEXT%",
+      "description": "Elite racing shoes with carbon fiber plate and ZoomX foam. Designed for maximum speed and efficiency in competition.",
+      "category": "Footwear",
+      "brand": "Nike",
+      "price": 250.00,
+      "stock": 30,
+      "rating": 4.9,
+      "tags": ["racing", "carbon fiber", "elite", "competition"],
+      "images": ["nikevaporfly1.jpg", "nikevaporfly2.jpg"]
+    },
+    {
+      "name": "Adidas Stan Smith",
+      "description": "Iconic tennis shoes with clean design and premium leather upper. Classic style that never goes out of fashion.",
+      "category": "Footwear",
+      "brand": "Adidas",
+      "price": 85.00,
+      "stock": 120,
+      "rating": 4.5,
+      "tags": ["classic", "tennis", "leather", "iconic"],
+      "images": ["stan-smith1.jpg", "stan-smith2.jpg"]
+    },
+    {
+      "name": "H&M Basic T-Shirt Pack",
+      "description": "Pack of 3 comfortable cotton t-shirts in basic colors. Perfect for everyday wear and layering.",
+      "category": "Clothing",
+      "brand": "H&M",
+      "price": 24.99,
+      "stock": 300,
+      "rating": 4.3,
+      "tags": ["t-shirt", "basic", "cotton", "pack", "everyday"],
+      "images": ["hm-tshirt1.jpg", "hm-tshirt2.jpg"]
+    },
+    {
+      "name": "Zara Blazer Jacket",
+      "description": "Elegant blazer jacket with structured fit and modern design. Perfect for professional and casual occasions.",
+      "category": "Clothing",
+      "brand": "Zara",
+      "price": 89.90,
+      "stock": 80,
+      "rating": 4.4,
+      "tags": ["blazer", "jacket", "professional", "elegant", "structured"],
+      "images": ["zara-blazer1.jpg", "zara-blazer2.jpg"]
+    },
+    {
+      "name": "Samsung QLED 4K TV 65-inch",
+      "description": "Premium 4K QLED TV with Quantum Dot technology and HDR support. Immersive viewing experience with smart features.",
+      "category": "Electronics",
+      "brand": "Samsung",
+      "price": 1299.99,
+      "stock": 20,
+      "rating": 4.8,
+      "tags": ["TV", "4K", "QLED", "HDR", "smart"],
+      "images": ["samsung-tv1.jpg", "samsung-tv2.jpg"]
+    },
+    {
+      "name": "LG OLED 55-inch C3",
+      "description": "55-inch OLED TV with perfect blacks and infinite contrast. AI-powered processing and gaming features.",
+      "category": "Electronics",
+      "brand": "LG",
+      "price": 1499.99,
+      "stock": 15,
+      "rating": 4.9,
+      "tags": ["TV", "OLED", "gaming", "AI", "perfect blacks"],
+      "images": ["lg-oled1.jpg", "lg-oled2.jpg"]
+    },
+    {
+      "name": "GoPro Hero 11 Black",
+      "description": "Action camera with 5.3K video, 27MP photos, and HyperSmooth 5.0 stabilization. Waterproof and rugged design.",
+      "category": "Electronics",
+      "brand": "GoPro",
+      "price": 499.99,
+      "stock": 40,
+      "rating": 4.7,
+      "tags": ["action camera", "5.3K", "waterproof", "stabilization", "rugged"],
+      "images": ["gopro-hero111.jpg", "gopro-hero112.jpg"]
+    },
+    {
+      "name": "DJI Mini 3 Pro Drone",
+      "description": "Ultralight drone with 4K camera and obstacle avoidance. Perfect for aerial photography and videography.",
+      "category": "Electronics",
+      "brand": "DJI",
+      "price": 759.00,
+      "stock": 25,
+      "rating": 4.8,
+      "tags": ["drone", "4K", "ultralight", "obstacle avoidance", "aerial"],
+      "images": ["dji-mini31.jpg", "dji-mini32.jpg"]
+    },
+    {
+      "name": "Ray-Ban Aviator Classic",
+      "description": "Timeless aviator sunglasses with gold frame and green lenses. Iconic design that suits any face shape.",
+      "category": "Accessories",
+      "brand": "Ray-Ban",
+      "price": 154.00,
+      "stock": 90,
+      "rating": 4.6,
+      "tags": ["sunglasses", "aviator", "classic", "gold frame", "iconic"],
+      "images": ["rayban-aviator1.jpg", "rayban-aviator2.jpg"]
+    },
+    {
+      "name": "Rolex Submariner",
+      "description": "Luxury dive watch with automatic movement and water resistance to 300m. Iconic design with date display.",
+      "category": "Accessories",
+      "brand": "Rolex",
+      "price": 8950.00,
+      "stock": 5,
+      "rating": 4.9,
+      "tags": ["luxury", "watch", "dive", "automatic", "waterproof"],
+      "images": ["rolex-submariner1.jpg", "rolex-submariner2.jpg"]
+    },
+    {
+      "name": "Hermès Birkin Bag",
+      "description": "Exclusive handcrafted leather handbag with signature hardware. Made from premium materials with meticulous attention to detail.",
+      "category": "Accessories",
+      "brand": "Hermès",
+      "price": 12000.00,
+      "stock": 2,
+      "rating": 5.0,
+      "tags": ["luxury", "handbag", "leather", "handcrafted", "exclusive"],
+      "images": ["hermes-birkin1.jpg", "hermes-birkin2.jpg"]
+    },
+    {
+      "name": "Nike Dri-FIT Training Shorts",
+      "description": "Moisture-wicking training shorts with built-in liner and stretch fabric. Perfect for workouts and athletic activities.",
+      "category": "Clothing",
+      "brand": "Nike",
+      "price": 45.00,
+      "stock": 150,
+      "rating": 4.5,
+      "tags": ["shorts", "training", "moisture-wicking", "athletic", "stretch"],
+      "images": ["nike-drifit1.jpg", "nike-drifit2.jpg"]
+    },
+    {
+      "name": "Under Armour Tech 2.0 T-Shirt",
+      "description": "Performance t-shirt with moisture-wicking technology and anti-odor treatment. Lightweight and breathable fabric.",
+      "category": "Clothing",
+      "brand": "Under Armour",
+      "price": 35.00,
+      "stock": 200,
+      "rating": 4.4,
+      "tags": ["t-shirt", "performance", "moisture-wicking", "anti-odor", "breathable"],
+      "images": ["ua-tech1.jpg", "ua-tech2.jpg"]
+    }
+  ]
+}
